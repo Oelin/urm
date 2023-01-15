@@ -83,6 +83,8 @@ y = 2
 
 _, registers = UnlimitedRegisterMachine.execute({ 0: x, 1: y }, addition)
 z = registers[2]
+
+print(f'{x} + {y} = {z}')
 ```
 
 ## Conclusion
