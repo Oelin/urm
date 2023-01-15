@@ -70,21 +70,13 @@ This method takes in a register map and source code string, and returns a new re
 ```py
 from urm import UnlimitedRegisterMachine
 
-
-# A program to compute r2 = r0 + r1
-
-addition = '''
-m 0 2
+addition = '''m 0 2
 z 3
 s 2
 s 3
 j 3 1 6
 j 0 0 2
-x
-'''.strip()
-
-
-# Execute the addition program with r0 = x and r1 = y.
+x'''
 
 x = 1
 y = 2
